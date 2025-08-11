@@ -1,0 +1,19 @@
+{
+  "bio_schema": {
+    "birth_date": "string | null (YYYY-MM-DD if known)",
+    "death_date": "string | null (YYYY-MM-DD if known)",
+    "birth_place": "string | null",
+    "death_place": "string | null",
+    "interesting_facts": ["string"],
+    "known_for": ["string"]
+  },
+  "rules": [
+    "Always produce output strictly in desired_format using bio_schema keys only.",
+    "All textual values must be in Russian (ru). Keys remain as in bio_schema.",
+    "Values must be concise and factual; omit unknowns as null.",
+    "No extra commentary around the formatted output.",
+    "If the question is not about a person's biography, respond with plain text explaining lack of competence."
+  ]
+}
+
+
