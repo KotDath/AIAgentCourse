@@ -1,0 +1,44 @@
+{
+  "menu_schema": {
+    "plan_title": "string",
+    "target": "string (e.g., снижение жира | поддержание | набор мышц)",
+    "duration_days": "integer",
+    "meals_per_day": "integer",
+    "total_daily_calories": "integer | null",
+    "dietary_style": "string (e.g., всеядное | вегетарианское | веганское | кето | палео)",
+    "restrictions": ["string (e.g., без глютена, без лактозы)"],
+    "avoid_ingredients": ["string"],
+    "preferred_cuisines": ["string"],
+    "budget_level": "string | null (низкий | средний | высокий)",
+    "max_cook_time_min": "integer | null",
+    "equipment": ["string"],
+    "macros_ratio": {
+      "protein_percent": "integer | null",
+      "fat_percent": "integer | null",
+      "carbs_percent": "integer | null"
+    },
+    "days": [
+      {
+        "day": "integer",
+        "meals": [
+          {
+            "name": "string (завтрак | перекус | обед | ужин и т.д.)",
+            "dish": "string",
+            "calories": "integer | null",
+            "protein_g": "integer | null",
+            "fat_g": "integer | null",
+            "carbs_g": "integer | null",
+            "ingredients": [
+              { "name": "string", "qty": "number | null", "unit": "string | null" }
+            ],
+            "recipe": "string (краткие шаги)"
+          }
+        ]
+      }
+    ],
+    "shopping_list": ["string"],
+    "notes": ["string"]
+  }
+}
+
+
